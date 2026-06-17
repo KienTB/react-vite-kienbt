@@ -4,10 +4,17 @@
 import './style.css';
 
 const MyComponent = () => {
+    const hoidanit = {
+        name: "hoidanit",
+        age: 20,
+        isStudent: true
+    };
   return (
     <>
-      <div> eric & hoidanit </div>
-      <div className="child">test</div>
+      <div> {JSON.stringify(hoidanit)} eric & hoidanit </div>
+      <div>{console.log("Kien")}</div>
+      <div className="child"
+      style={{borderRadius: "10px"}}>test</div>
     </>
   );
 }
