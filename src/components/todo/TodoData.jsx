@@ -1,11 +1,13 @@
-const TodoData = () => {
+const TodoData = (props) => {
     return (
         <div className="todo-data">
             <div>Learning React</div>
             <div>Watching Youtube</div>
             <div>
-                {JSON.stringify(props.TodoList)}
+                {JSON.stringify(props.todoList)}
             </div>
         </div>
     )
 }
+
+export default TodoData;
