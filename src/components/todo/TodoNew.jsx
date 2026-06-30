@@ -18,6 +18,7 @@ const TodoNew = (props) => {
     return (
         <div className="todo-new">
             <input type="text" 
+                value={valueInput}
                 onChange={(event) => handleOnChange(event.target.value)}
             />
             <button
@@ -25,9 +26,9 @@ const TodoNew = (props) => {
                 onClick={() => handleClick()}>
                     Add
                 </button>
-                <div>
-                    My text input is = 
-                </div>
+            <span>
+                My text input is = {valueInput}
+            </span>
         </div>
     )
 }
